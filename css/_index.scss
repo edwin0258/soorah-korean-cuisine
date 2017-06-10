@@ -1,0 +1,64 @@
+
+
+.slideshow {
+  margin: 0px auto 40px auto;
+  width: 100%;
+  max-width: 75em;
+  height: 600px;
+  display: flex;
+  flex-flow: row;
+  overflow:hidden;
+  display: flex;
+  position: relative;
+
+}
+
+.slides {
+  height: 100%;
+  width: inherit;
+  $width: width;
+  transition: .4s transform cubic-bezier(0.42, 0, 0.58, 1);
+  transform: translate3d($width, 0px, 0px);
+  display: flex;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slideshowNav,
+.menuNav {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .2s opacity;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.slideshowBtn,
+.menuNavBtn {
+  height: 80px;
+  width: 40px;
+  margin: 20px;
+  cursor: pointer;
+  opacity: .8;
+  color: $whiteSmoke;
+  border: none;
+  background: $richBlack;
+}
+
+/*# sourceMappingURL=index.css.map */

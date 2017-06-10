@@ -1,0 +1,333 @@
+$whiteSmoke: #F9F5F2;
+$beige: #FAF3DD;
+$paleCarmine: #cf1d35;
+$richBlack: #070606;
+$mobileView: 700px;
+
+html {
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+}
+
+.pageHeader {
+  background: $whiteSmoke;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  z-index:99;
+  height: 150px;
+  .info {
+    background: lighten($richBlack, 10%);
+  }
+  
+  .social {
+    align-items: center;
+    padding-top: 4px;
+  }
+  
+  .icon {
+     font-size: 12px;
+  }
+  
+  .logo {
+    @media(max-width: $mobileView) {
+      height: 50px;
+      width: auto;
+    }
+  }
+  
+  @media(max-width: $mobileView) {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+  }
+}
+
+.mainNavigation {
+  @media(max-width: $mobileView) {
+    background: $richBlack;
+    height: 100%;
+    left: 0;
+    top: 100px;
+    position: fixed;
+    transform: translate3d(100%,0px,0px);
+    transition: transform .5s;
+    width: 100%;  
+  }
+}
+
+.expandNavigation {
+  transition: transform .5s;
+  transform: translate3d(0px,0px,0px);
+}
+
+.mainNavigationList {
+  display: flex;
+  @media(max-width: $mobileView) {
+    height: calc(100% - 100px);
+    justify-content: flex-start;
+    flex-flow: column wrap;
+  }
+}
+
+.mobileMenuButton {
+  display: none;
+  @media(max-width: $mobileView) {
+    border: 1px solid $richBlack;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+  }
+  &:after {
+    content: "Menu";
+  }
+}
+
+.closeButton {
+  &:after {
+    content: "Close";
+  }
+}
+
+.mainHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 70em;
+  position: relative;
+  padding: 10px 0px;
+  z-index: 100;
+  @media(max-width: 70em) {
+    padding: 10px 20px;
+  }
+
+  
+}
+
+.mainLink {
+  @extend .bodyFont;
+  color: lighten($richBlack, 5%);
+  margin-left: 40px;
+  @media(max-width: $mobileView) {
+    box-sizing: border-box;
+    background: rgba(255,255,255,.1);
+    color: darken($whiteSmoke, 5%);
+    display: block;
+    margin:5px 0px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    &:hover {
+      background: rgba(255,255,255,.2);
+    }
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 600px;
+  height: auto;
+  width: 100%;
+  max-width: 70em;
+  margin: 0 auto;
+  @media(max-width: $mobileView) {
+    top: 100px;
+  }
+}
+
+.headContainer {
+  min-width: 100%;
+  height: 300px;
+}
+
+.contentHead {
+  max-width: 70em;
+  width: 100%;
+  margin:0 auto;
+  height: 300px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contentHeader {
+  color: $whiteSmoke;
+  font-size: 75px;
+  font-family: "oswald", sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px black, -2px -2px black, 2px 0px black;
+}
+
+
+
+
+
+.headerFont {
+  font-size: 18px;
+  font-family: "oswald", sans-serif;
+  line-height: 40px;
+  letter-spacing: .5px;
+  text-transform: capitalize;
+}
+
+.bodyFont {
+  font-family: "pt sans", sans-serif;
+  letter-spacing: .5px;
+  line-height: 20px;
+}
+
+footer {
+  background: lighten($richBlack, 5%);
+  height: auto;
+  padding-top: 10px;
+  width: 100%;
+  @media(max-width: $mobileView) {
+    margin-top: 100px;
+  }
+  .social {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.footerMain {
+  text-align: center;
+}
+
+.logo,
+.footerLogo {
+  width: 121px;
+  background: $whiteSmoke;
+}
+
+.footerLogo {
+  filter: sepia(100%);
+  background: transparent;
+  opacity: .4;
+  margin: 20px auto;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 10px auto;
+  max-width: 80em;
+  .column {
+    align-items: center;
+    min-width: 200px;
+    margin: 10px 0px;
+  }
+}
+
+.secondaryHeading {
+  @extend .headerFont;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  .socialIcon {
+    @extend .lightText;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    height:25px;
+    margin: 5px;
+  }
+}
+
+.info {
+  background: $richBlack;
+  box-sizing: border-box; 
+  height: 30px;
+  padding: 0px 20px;
+}
+
+.row {
+  @extend .bodyFont;
+  max-width: 70em;
+  margin: 0 auto;
+  @media(max-width: 400px) {
+    justify-content: flex-end;
+  }
+}
+
+.infoRow{
+  @extend .bodyFont;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+  @media(max-width: 400px) {
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+
+.headerInfo {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.linkList,
+.restaurantAddress {
+  font-size: 13px;
+}
+
+.textLink,
+.restaurantAddress {
+  @extend .bodyFont;
+  color: lighten($richBlack, 70%);
+}
+
+.linkList,
+.restaurantAddress {
+  text-align: center;
+}
+
+.textLinkSmall,
+.smallText {
+  color: $whiteSmoke;
+  font-size: 12px;
+  &:hover {
+    color: #RGB(250, 243, 221);
+  }
+}
+
+.lightText {
+  color: darken($whiteSmoke, 5%);
+}
+
+.darkText {
+  color: lighten($richBlack, 5%);
+}
+
+.copyright,
+.name {
+  color: $whiteSmoke;
+  font-size: 10px;
+  @media(max-width: 400px) {
+    line-height: 3px;
+  }
+}
+
+
+.headerInfo {
+  max-width: 70em;
+}
+
+@import "_index.scss";
+@import "_menu.scss";
+@import "_gallery.scss";
+@import "_reviews.scss";

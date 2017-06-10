@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Devin Miller"/>
+  <title>Dinner Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|PT+Sans|PT+Serif" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="pageHeader">
+    <div class="info">
+      <div class="infoRow headerInfo row">
+        <a href="index.html"><small class="name">Soo Rah Korean Cuisine</small></a>
+        
+        <div class="social">
+          <a class="socialIcon" tabindex="0" aria-label="Go to restaurant yelp page"><i class="fa fa-yelp icon"></i></a>
+          <a class="socialIcon" tabindex="0" aria-label="Go to restaurant facebook page."><i class="fa fa-facebook icon"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mainHeader">
+      <a href="index.html"><img src="https://image.ibb.co/hRkxOF/SooRah.png" class="logo" alt="SooRah" border="0"></a>
+      
+      <nav class="mainNavigation" id="navigation">
+        <ul class="mainNavigationList" id="navigationList" role="menu">
+          <li role="menuitem">
+            <a href="lunch-menu.html" class="mainLink">Lunch Menu</a>
+          </li>
+          <li role="menuitem">
+            <a href="dinner-menu.html" class="mainLink">Dinner Menu</a>
+          </li>
+          <li role="menuitem">
+            <a href="gallery.html" class="mainLink">Gallery</a>
+          </li>
+          <li role="menuitem">
+            <a href="reviews.html" class="mainLink">Customer Reviews</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <button class="mobileMenuButton" id="menuToggle"><i class="fa fa-bars">&nbsp;</i></button>
+    </div>
+  </header>
+
+
+
+
+  <div class="content">
+    <div class="headContainer">
+      <div class="contentHead">
+        <h1 class="contentHeader">Dinner Menu</h1>
+      </div>
+  </div>
+  
+  
+  <div class="contentBody">
+    <div class="sideContent">
+      
+      <nav class="sideNav">
+        <h3 class="header">Table of Contents</h3>
+        <ul class="linkList menuList">
+          <li class="textLink">
+            <span class="menuListItemName">Alcoholic Beverages</span> <small class="smallText pageNote">Page 2</small>
+          </li>
+          <li class="textLink">
+            <span class="menuListItemName">Beverages</span> <small class="smallText pageNote">Page 3</small>
+          </li>
+          <li class="textLink">
+            <span class="menuListItemName">Hot Appetizers</span> <small class="smallText pageNote">Page 4, 5</small>
+          </li>
+          <li class="textLink">
+            <span class="menuListItemName">Cold Appetizers</span> <small class="smallText pageNote">Page 5</small>
+          </li>
+          <li class="textLink">
+            <span class="menuListItemName">Korean B.B.Q. Dishes</span> <small class="smallText pageNote">Page 6</small>
+          </li>
+          <li class="textLink">
+            <span class="menuListItemName">Korean Stew Dishes</span> <small class="smallText pageNote">Page 6, 7</small>
+          </li>
+          <li class="textLink">
+            <span class="menuListItemName">Korean Curry Rice, Noodles</span> <small class="smallText pageNote">Page 8</small>
+          </li>
+          <li class="textLink">
+            <span class="menuListItemName">Katsu, Kids Meal, Sushi</span> <small class="smallText pageNote">Page 9</small>
+          </li>
+        </ul>
+      </nav>
+      <button class="menuTypeBtn" id="lunchMenuToggle" aria-label="toggle textual menu"></button><br>
+      <a href="./downloads/dinnerMenu.pdf" download><button class="downloadBtn">Download Menu PDF</button></a>
+    </div>
+
+    <div class="mainContent">
+      <div class="menu" id="menu">
+        <div class="menuPageCounter" id="counter">1</div>
+        <div class="menuNav" id="menuNavigation">
+          <button class="menuNavBtn" id="menuPrev"><
+          </button>
+          <button class="menuNavBtn" id="menuNext">>
+          </button>
+        </div>
+        <img src="images/dinnerMenu0.jpg" alt="Soo Rah Korean Cuisine Lunch Menu Image" id="menuImage"/>
+
+
+        <div class="textMenu" id="textMenu">
+          <section class="alchoholicBeverages textMenuPage">
+            <h2 class="textMenuHeader">Alchoholic Beverages</h2>
+            <ul>
+              <li class="textMenuSubHeader">Korean Beer</li>
+              <ul class="textMenuList">
+                <li>Large<small class="smallText price">8.99</small></li>
+                <li>Small<small class="smallText price">4.99</small></li>
+                <li>Beers include Hite and Bluemoon.</li>
+              </ul>
+              <li class="textMenuSubHeader">Japanese Beer</li>
+              <ul class="textMenuList">
+                <li>Large <small class="smallText price">8.99</small></li>
+                <li>Small <small class="smallText price">4.99</small></li>
+                <li>Beers include Asahi, Sapporo, and Kirin.</li>
+              </ul>
+              <li class="textMenuSubHeader">Draft Beer<small class="smallText price">3.99</small></li>
+              <ul class="textMenuList">
+                <li>IPA (Deschutes) / HEFE (Widmer Brothers)</li>
+              </ul>
+              <li class="textMenuSubHeader">Korean Soju <span lang="ko">소주</span> (Bottle)<small class="smallText price">14.99</small></li>
+              <li class="textMenuSubHeader">Korean Makkoli <span lang="ko">막걸리</span> (Bottle)<small class="smallText price">15.99</small></li>
+              <li class="textMenuSubHeader">Korean Bek Se Ju <span lang="ko">백세주</span> (Bottle)<small class="smallText price">21.99</small></li>
+
+              <li class="textMenuSubHeader">Sake (Hot)</li>
+              <ul class="textMenuList">
+                <li>Large<small class="smallText price">8.99</small></li>
+                <li>Small<small class="smallText price">4.99</small></li>
+              </ul>
+              <li class="textMenuSubHeader">Sake (Cold)</li>
+              <ul class="textMenuList">
+                <li>Any cold sake ask your server please.</li>
+              </ul>
+              <li class="textMenuSubHeader">Korean Soju Cocktail</li>
+              <table class="textMenuTable">
+                <thead>
+                  <tr>
+                    <td class="mainTableRow"></td>
+                    <td>Glass</td>
+                    <td>Bottle</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cucumber Soju</td>
+                    <td class="smallText">9.99</td>
+                    <td class="smallText">27.99</td>
+                  </tr>
+                  <tr>
+                    <td>Orange Soju</td>
+                    <td class="smallText">10.99</td>
+                    <td class="smallText">29.99</td>
+                  </tr>
+                  <tr>
+                    <td>Peach Yoplait Soju</td>
+                    <td class="smallText">10.99</td>
+                    <td class="smallText">29.99</td>
+                  </tr>
+                </tbody>
+              </table>
+              <li class="textMenuSubHeader">White Wine</li>
+              <table class="textMenuTable">
+                <thead>
+                  <tr>
+                    <td class="mainTableRow"></td>
+                    <td>Glass</td>
+                    <td>Bottle</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Pinot Grigio (Sycamore Lane)</td>
+                    <td class="smallText">4.99</td>
+                    <td class="smallText">21.99</td>
+                  </tr>
+                  <tr>
+                    <td>Chardonnay (Plaisance / Dancin)</td>
+                    <td class="smallText">12.99</td>
+                    <td class="smallText">39.99</td>
+                  </tr>
+                  <tr>
+                    <td>Rose Jolee (Del Rio)</td>
+                    <td class="smallText">5.99</td>
+                    <td class="smallText">23.99</td>
+                  </tr>
+                  <tr>
+                    <td>Riesling (Schmidt family)</td>
+                    <td class="smallText">8.99</td>
+                    <td class="smallText">36.99</td>
+                  </tr>
+                </tbody>
+              </table>
+              <li class="textMenuSubHeader">Red Wine</li>
+              <table class="textMenuTable">
+                <thead>
+                  <tr>
+                    <td class="mainTableRow"></td>
+                    <td>Glass</td>
+                    <td>Bottle</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Korean Black Raspberry <span lang="ko">복분자주</span></td>
+                    <td></td>
+                    <td class="smallText">26.99</td>
+                  </tr>
+                  <tr>
+                    <td>Korean Plum <span lang="ko">매실주</span></td>
+                    <td></td>
+                    <td class="smallText">28.99</td>
+                  </tr>
+                  <tr>
+                    <td>Merlot (Sycamore Lane)</td>
+                    <td class="smallText">4.99</td>
+                    <td class="smallText">22.99</td>
+                  </tr>
+                  <tr>
+                    <td>Claret (Roxyann)</td>
+                    <td class="smallText">9.99</td>
+                    <td class="smallText">36.99</td>
+                  </tr>
+                  <tr>
+                    <td>Pinot Noir (Dancin)</td>
+                    <td class="smallText">12.99</td>
+                    <td class="smallText">39.99</td>
+                  </tr>
+                  <tr>
+                    <td>Cabernet Franc (Plaisance)</td>
+                    <td class="smallText">9.99</td>
+                    <td class="smallText">36.99</td>
+                  </tr>
+                </tbody>
+              </table>
+            </ul>
+          </section>
+          <section class="beverages textMenuPage">
+              <h2 class="textMenuHeader">Beverages</h2>
+              <ul>
+                <li class="textMenuSubHeader">Korean Hot Tea</li>
+                <ul class="textMenuList">
+                  <li>Ginseng Tea <span lang="ko">인삼차</span><small class="smallText price">6.99</small></li>
+                  <li>Plum Tea <span lang="ko">매실차</span><small class="smallText price">5.99</small></li>
+                  <li>Ginger Tea <span lang="ko">생강차</span><small class="smallText price">3.99</small></li>
+                  <li>Citron Tea <span lang="ko">유자차</span><small class="smallText price">3.99</small></li>
+                  <li>Quince Tea <span lang="ko">모과차</span><small class="smallText price">4.50</small><li>
+                  <li>Chrysanthemum Flower Tea <span lang="ko">국화차</span><small class="smallText price">3.99</small><li>
+                </ul>
+                <li class="textMenuSubHeader">Korean Cold Tea</li>
+                <ul class="textMenuList">
+                  <li>Plum Tea <span lang="ko">매실차</span><small class="smallText price">6.99</small></li>
+                  <li>Ginger Tea <span lang="ko">생강차</span><small class="smallText price">4.99</small></li>
+                  <li>Citron Tea <span lang="ko">유자차</span><small class="smallText price">4.99</small></li>
+                  <li>Quince Tea <span lang="ko">모과차</span><small class="smallText price">5.50</small><li>
+                </ul>
+                <li class="textMenuSubHeader">Hot Tea<small class="smallText price">3.50</small></li>
+                <ul class="textMenuList">
+                  <li>Green Tea</li>
+                  <li>Chai Spice Tea</li>
+                  <li>Earl Grey Tea</li>
+                  <li>Camomile Tea<li>
+                  <li>Jasmine Tea<li>
+                  <li>Black Tea<li>
+                </ul>
+                <li class="textMenuSubHeader">Coffee (Hand Drip Coffee)</li>
+                <ul class="textMenuList">
+                  <li>Organic Coffee<small class="smallText price">3.50</small></li>
+                  <li>Ice Coffee<small class="smallText price">3.99</small></li>
+                </ul>
+
+                <li class="textMenuSubHeader">Juice</li>
+                <ul class="textMenuList">
+                  <li>Apple Juice <span lang="ko">사과쥬스</span><small class="smallText price">3.50</small></li>
+                  <li>Orange Juice <span lang="ko">오렌지쥬스</span><small class="smallText price">3.50</small></li>
+                  <li>Bottle Water <span lang="ko">병물</span><small class="smallText price">1.99</small></li>
+                  <li>Organic Milk <span lang="ko">유기농우유</span><small class="smallText price">3.50</small></li>
+                  <li>Sparkling Natural Mineral Water<small class="smallText price">3.99</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Smoothies<small class="smallText price">4.99</small></li>
+                <ul class="textMenuList">
+                  <li>Mango</li>
+                  <li>Peach</li>
+                  <li>Strawberry</li>
+                  <li>Raspberry</li>
+                </ul>
+                <li class="textMenuSubHeader">Soft Drinks<small class="smallText price">1.99</small></li>
+                <ul class="textMenuList">
+                  <li>Coke</li>
+                  <li>Diet Coke</li>
+                  <li>Sprite</li>
+                  <li>Lemonade</li>
+                  <li>Root Beer</li>
+                  <li>Ice Tea</li>
+                  <li>(Lemonade + Ice Tea<small class="smallText price">2.99</small>)</li>
+                </ul>
+              </ul>
+            </section>
+            <section class="hotAppetizers textMenuPage">
+              <h2 class="textMenuHeader">Hot Appetizers</h2>
+              <ul>
+                <li class="textMenuSubHeader">MJ's Jeon / MJ's Pancake</li>
+                <ul class="textMenuList">
+                  <li>
+                    <span class="key smallText">A1</span>Seafood Jeon <span lang="ko">해물파전</span><small class="smallText price">15.99</small>
+                    <div class="description">calamari, shrimp, crab, jalapenos, green onions, organic vege.</div>
+                  </li>
+                  <li><span class="key smallText">A2</span>Kimchi Jeon <span lang="ko">김치전</span><small class="smallText price">14.99</small></li>
+                  <li>
+                    <span class="key smallText">A2-1</span>(Add pork)<small class="smallText price">add 3.00</small>
+                    <div class="description">kimchi, jalapenos, organic vege.</div>
+                  </li>
+                  <li>
+                    <span class="key smallText">A3</span>Beef Jeon <span lang="ko">소고기전</span><small class="smallText price">14.99</small>
+                    <div class="description">beef, jalapenos, organic vege.</div>
+                  </li>
+                  <li><span class="key smallText">A4</span>Vegetable Jeon <span lang="ko">야채전</span><small class="smallText price">11.99</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Mandu / Dumplings (pork - 7 pieces, organic vege - 5 pieces)</li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">A5</span>Pan Fried Dumplings <span lang="ko">군만두</span><small class="smallText price">6.99</small></li>
+                  <li><span class="key smallText">A6</span>Steamed Dumplings <span lang="ko">찐만두</span><small class="smallText price">6.99</small></li>
+                  <li><span class="key smallText">A7</span>Organic Edamame <span lang="ko">유기농콩</span><small class="smallText price">2.99</small></li>
+                  <li>
+                    <span class="key smallText">A8</span>Spicy Rice Cake <span lang="ko">떡볶이</span><small class="smallText price">12.99</small>
+                    <div class="description">Rice cake with fish cake, veg., and korean spicy sauce.</div>
+                  <li>
+                  <li>
+                    <span class="key smallText">A9</span>Organic Garlic Edamame<small class="smallText price">4.99</small>
+                    <div class="description">organic edamame, olive oil, garlic</div>
+                  <li>
+                </ul>
+                <li class="textMenuSubHeader">Tempura</li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">A10</span>Shrimp Tempura <span lang="ko">새우튀김</span><small class="smallText price">11.99</small></li>
+                  <li><span class="key smallText">A11</span>Calamari Tempura <span lang="ko">오징어튀김</span><small class="smallText price">10.99</small></li>
+                  <li><span class="key smallText">A12</span>Vegetable Tempura <span lang="ko">야채튀김</span><small class="smallText price">6.99</small></li>
+                  <li><span class="key smallText">A14</span>Tofu Flower Tempura <span lang="ko">두부튀김</span><small class="smallText price">6.99</small></li>
+                  <li><span class="key smallText">A15</span>Egg Roll <span lang="ko">에그롤</span><small class="smallText price">5.99</small></li>
+                  <li><span class="key smallText">A16</span>Fire Bomb <span lang="ko">고추튀김</span><small class="smallText price">9.99</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Grilled</li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">A17</span>Salmon Collar <span lang="ko">연어 목살구이</span><small class="smallText price">10.99</small></li>
+                  <li><span class="key smallText">A18</span>Yellowtail Collar <span lang="ko">방어 목살구이</span><small class="smallText price">12.99</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Side Dishes / Sauces</li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">A19</span>Kimchi <span lang="ko">김치</span><small class="smallText price">2.99</small></li>
+                  <li>
+                    <span class="key smallText">A20</span>Miscellaneous Steamed Rice <span lang="ko">잡곡밥</span><small class="smallText price">2.99</small>
+                    <div class="description">28 kinds of rice and beans</div>
+                  </li>
+                  <li><span class="key smallText">A21</span>White Steamed Rice <span lang="ko">흰밥</span><small class="smallText price">1.99</small></li>
+                  <li><span class="key smallText">A22</span>Kim (Korean Roasted Seaweed) <span lang="ko">김</span><small class="smallText price">2.50</small></li>
+                  <li><span class="key smallText">A23</span>Miso Soup <span lang="ko">된장국</span><small class="smallText price">(S - 1.99, L - 2.99)</small></li>
+                  <li><span class="key smallText">A24</span>Gluten Free Soy Sauce (2oz)<small class="smallText price">1.99</small></li>
+                  <li><span class="key smallText">A25</span>Korean Bean Paste Sauce (2oz)<small class="smallText price">1.99</small></li>
+                </ul>
+              </ul>
+            </section>
+            <section class="coldAppetizers textMenuPage">
+              <h2 class="textMenuHeader">Cold Appetizers</h2>
+              <ul>
+                <li class="textMenuSubHeader">Sashimi</li>
+                <ul class="textMenuList">
+                  <li>
+                    <span class="key smallText">A26*</span>Assorted Sashimi (7 pieces)<small class="smallText price">14.99</small>
+                    <div class="description">Chef's choice</div>
+                  </li>
+                  <li><span class="key smallText">A27*</span>Tuna Tataki<small class="smallText price">15.99</small></li>
+                  <li><span class="key smallText">A28*</span>Albacore Tender<small class="smallText price">12.99</small></li>
+                  <li><span class="key smallText">A29*</span>Beef Tataki (Filet Mignon)<small class="smallText price">17.99</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Salad</li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">A30</span>House Salad <span lang="ko">샐러드</span><small class="smallText price">5.99</small></li>
+                  <li><span class="key smallText">A31</span>Seaweed Salad <span lang="ko">해초샐러드</span><small class="smallText price">8.99</small></li>
+                  <li><span class="key smallText">A32</span>Cucumber Salad <span lang="ko">오이샐러드</span><small class="smallText price">7.99</small></li>
+                  <li><span class="key smallText">A33</span>Avocado Salad <span lang="ko">아보카도샐러드</span><small class="smallText price">8.99</small></li>
+                  <li><span class="key smallText">A34*</span>Ahi Tuna Poke <span lang="ko">참치샐러드</span><small class="smallText price">17.99</small></li>
+                  <li><span class="key smallText">A35</span>Octopus Salad <span lang="ko">문어샐러드</span><small class="smallText price">10.99</small></li>
+                  <li><span class="key smallText">A36</span>Salmon Skin Salad <span lang="ko">연어껍질</span><small class="smallText price">9.99</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Side Orders (To Go Only)<small class="smallText"> - Home Made (No MSG)</small></li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">A37</span>Kimchi (32oz)<small class="smallText price">10.99</small></li>
+                  <li><span class="key smallText">A38</span>Kimchi (16oz)<small class="smallText price">5.99</small></li>
+                  <li><span class="key smallText">A39</span>Bibimbob Sauce (8oz)<small class="smallText price">5.99</small></li>
+                  <li><span class="key smallText">A40</span>Teriyaki Sauce (16oz)<small class="smallText price">6.99</small></li>
+                  <li><span class="key smallText">A41</span>Korean Bean Paste Sauce<small class="smallText price">5.99</small></li>
+                </ul>
+                <li class="note">*These items are served with raw ingredients. Consuming raw or undercooked meats, seafood, shellfish or eggs may increase your risk of foodborne illnesses, especially if you have certain medical conditions.</li>
+              </ul>
+            </section>
+            <section class="sooRahBBQDishes textMenuPage">
+              <h2 class="textMenuHeader">Korean B.B.Q. Dishes</h2>
+              <p class="note">Served with 26 different kinds of grains, mixed steamed rice, miso soup, and a side dish.</p>
+              <ul>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D1</span>Galbi (Beef Ribs) <span lang="ko">갈비</span><small class="smallText price">(Small - 23.00, Large - 29.00)</small></li>
+                  <li><span class="key smallText">D1-1</span>(Spicy Galbi)<small class="smallText price">add 3.00</small>
+                  <div class="description">Grilled short beef ribs cubes marinated in special home made korean B.B.Q sauce</div></li>
+                  <li><span class="key smallText">D2</span>Beef Bulgogi <span lang="ko">불고기</span><small class="smallText price">19.00</small></li>
+                  <li><span class="key smallText">D3</span>Pork Bulgogi <span lang="ko">돼지불고기</span><small class="smallText price">17.00</small></li>
+                  <li><span class="key smallText">D4</span>Chicken Bulgogi <span lang="ko">닭불고기</span><small class="smallText price">17.00</small></li>
+                  <li><span class="key smallText">D5</span>Ojinge Bokum (Squid Stir Fried) <span lang="ko">오징어볶음</span><small class="smallText price">19.00</small></li>
+                  <li><span class="key smallText">D6</span>Kimchi and Pork <span lang="ko">김치제육볶음</span><small class="smallText price">21.00</small></li>
+                  <li><span class="key smallText">D7</span>Chicken Teriyaki <span lang="ko">치킨데리야끼</span><small class="smallText price">17.00</small></li>
+                  <li><span class="key smallText">D8</span>Grilled Fresh Water Eel <span lang="ko">장어구이</span><small class="smallText price">29.00</small></li>
+                  <li><span class="key smallText">D9</span>Grilled Salmon <span lang="ko">연어구이</span><small class="smallText price">19.00</small></li>
+                  <li><span class="key smallText">D10</span>Vege. Teriyaki <span lang="ko">야채 데리야끼</span><small class="smallText price">15.00</small></li>
+                  <li><span class="key smallText">D10-1</span>(With Tofu)<small class="smallText price">Add 3.00</small></li>
+                  <li><span class="key smallText">D11</span>Ssam (Side dish) <span lang="ko">쌈</span><small class="smallText price">5.99</small>
+                  <div class="description">Assorted lettuce with Korean bean paste sauce.</div></li>
+                </ul>
+              </ul>
+            </section>
+            <section class="sooRahKoreanStewDishes textMenuPage">
+              <h2 class="textMenuHeader">Korean Stew Dishes</h2>
+              <p class="note">Served with 26 different kinds of grains, mixed steamed rice, and a side dish.</p>
+              <ul>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D12</span>Beef Jeongol (For 1-2 people) <span lang="ko">불고기전골<small class="smallText price">32.00</small>
+                  <div class="description">Marinated slices of beef with mushrooms, veg., crystal noodle in a sizzling hot stone pot.</div></li>
+                  <li><span class="key smallText">D14</span>Galbi Jjim (Braised Short Beef Rib) <span lang="ko">갈비찜<small class="smallText price">(Small - 27.00, Large - 35.00)</small>
+                  <div class="description">Grilled short beef ribs cubes marinated in special home made korean B.B.Q sauce</div></li>
+                </ul>
+                <li class="textMenuSubHeader">Bibimbob <span lang="ko">비빔밥</span>
+                  <div class="note">Served with miso soup and a side dish.</div>
+                </li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D15</span>Bulgogi Dolsot Bibimbob <span lang="ko">불고기돌솥</span><small class="smallText price">15.00</small>
+                  <div class="description">Slices of beef, assorted mountain veg, over rice with hot stone pot and special spicy sauce.</div></li>
+                  <li><span class="key smallText">D16</span>Kimchi Dolsot Bibimbob <span lang="ko">김지돌솥</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D17</span>Seafood Dolsot Bibimbob <span lang="ko">해물돌솥</span><small class="smallText price">17.00</small></li>
+                  <li><span class="key smallText">D18</span>Spicy Pork Dolsot Bibimbob <span lang="ko">돼지돌솥</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D19</span>Spicy Chicken Dolsot Bibimbob <span lang="ko">닭불고기돌솥</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D20</span>Chicken Teriyaki Dolsot Bibimbob <span lang="ko">치킨테리돌솥</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D21</span>Tofu Dolsot Bibimbob <span lang="ko">두부돌솥</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D22</span>Vege. Dolsot Bibimbob <span lang="ko">야채돌솥</span><small class="smallText price">12.99</small></li>
+                  
+                </ul>
+                <li class="textMenuSubHeader">Soft Tofu Soup <span lang="ko">순두부</span>
+                  <div class="note">Served with 26 different kinds of grains, mixed steamed rice, and a side dish. (Not spicy as request)</div>
+                </li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D23</span>Beef Tofu Soup <span lang="ko">소고기순두부</span><small class="smallText price">15.00</small></li>
+                  <li><span class="key smallText">D24</span>Seafood Tofu Soup <span lang="ko">해물순두부</span><small class="smallText price">17.00</small></li>
+                  <li><span class="key smallText">D25</span>Chicken Tofu Soup <span lang="ko">닭고기순두부</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D26</span>Dumpling Tofu Soup <span lang="ko">만두순두부</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D27</span>Mushroom Tofu Soup <span lang="ko">버섯순두부</span><small class="smallText price">16.00</small></li>
+                  <li><span class="key smallText">D28</span>Vege. Tofu Soup <span lang="ko">야채순두부</span><small class="smallText price">12.99</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Soup <span lang="ko">국</span>
+                  <div class="note">Served with 26 different kinds of grains, mixed steamed rice, and a side dish.</div>
+                </li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D29</span>Kimichi Soup <span lang="ko">김치찌개</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D30</span>Soybean Paste Soup <span lang="ko">된장찌개</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D31</span>Rice Cake and Dumpling Soup <span lang="ko">떡만두국</span><small class="smallText price">15.00</small></li>
+                  <li><span class="key smallText">D32</span>Ginseng Chicken Soup <span lang="ko">삼계탕</span><small class="smallText price">21.00</small>
+                  <div class="description">Stuffed cornish hen with Korean ginseng, garlic, jujube, ginger, licorice root, sweet rice.</div></li>
+                  <li><span class="key smallText">D33</span>Seaweed Soup <span lang="ko">미역국</span><small class="smallText price">12.99</small></li>
+                </ul>
+              </ul>
+            </section>
+            <section class="SooRahKoreanCurryRice textMenuPage">
+              <h2 class="textMenuHeader">Korean Curry Rice <span lang="ko">카레라이스</span></h2>
+              <p class="note">Served with miso soup and a side dish.</p>
+              <ul>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D34</span>Beef Curry Rice <span lang="ko">소고기카레</span><small class="smallText price">15.00</small></li>
+                  <li><span class="key smallText">D35</span>Chicken Curry Rice <span lang="ko">카레라이스</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D36</span>Mushroom Curry Rice <span lang="ko">버섯카레</span><small class="smallText price">16.00</small></li>
+                  <li><span class="key smallText">D37</span>Tofu Curry Rice <span lang="ko">두부카레</span><small class="smallText price">14.00</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Fried Rice <span lang="ko">볶음밥</span>
+                  <div class="note">SServed with miso soup and a side dish.</div>
+                </li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D38</span>Kimchi and Pork Fried Rice <span lang="ko">김치볶음밥</span><small class="smallText price">16.00</small></li>
+                  <li><span class="key smallText">D39</span>Chicken Fried Rice <span lang="ko">닭고기볶음밥</span><small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D40</span>Vege. Fried Rice <span lang="ko">야채볶음밥</span><small class="smallText price">12.99</small></li>
+                  <li><span class="key smallText">D41</span>Shrimp Fried Rice <span lang="ko">새우볶음밥</span><small class="smallText price">17.00</small></li>
+                </ul>
+                <li class="textMenuSubHeader">Udon / Noodles <span lang="ko">국수</span>
+                  <div class="note">Served with a side dish.</div>
+                </li>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D42</span>Japchae (Crystal Noodles) <span lang="ko">잡채</span><small class="smallText price">14.00</small><div class="description">Sweet potato noodles, beef, veges, sauted in specially seasoned Korean sauce.</div></li>
+                  <li><span class="key smallText">D43</span>Bibim Noodles <span lang="ko">비빔국수</span><small class="smallText price">14.00 (Buckwheat noodles - extra 3.00)</small><div class="description">Rice noodle with organic veges, Korean spicy sauce.</div></li>
+                  <li><span class="key smallText">D44</span>Chicken Yaki (Stir fry) Udon<small class="smallText price">14.00</small></li>
+                  <li><span class="key smallText">D45</span>Vege. Yaki Udon<small class="smallText price">12.99</small></li>
+                  <li><span class="key smallText">D46</span>Sefood Yaki Udon<small class="smallText price">17.00</small></li>
+                  <li><span class="key smallText">D47</span>Kimchi Udon <span lang="ko">김치우동</span><small class="smallText price">16.00</small><div class="description">Udon with aged kimchi and pork.</div></li>
+                  <li><span class="key smallText">D48</span>Tempura Udon <span lang="ko">튀김우동</span><small class="smallText price">15.00</small><div class="description">Udon with calamari tempura, shrimp tempura, mixed vege. tempura.</div></li>
+                  <li><span class="key smallText">D49</span>Seafood Udon <span lang="ko">해물우동</span><small class="smallText price">17.00</small><div class="description">Udon with shellfish, squid, mussels, shrimp, blue crab, and veges.</div></li>
+                  <li><span class="key smallText">D50</span>Fish Cake Udon <span lang="ko">어묵우동</span><small class="smallText price">17.00</small></li>
+                </ul>
+              </ul>
+            </section>
+            <section class="sooRahSushiBarKidsKatsu textMenuPage">
+              <h2 class="textMenuHeader">Katsu</h2>
+              <p class="note">Served with 26 different kinds of grains, mixed steamed rice, mixo soup, and salad.</p>
+              <ul>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D51</span>Pork Katsu<small class="smallText price">14.00</small><div class="description">Deep fried cutlet with special katsu sauce.</div></li>
+                  <li><span class="key smallText">D52</span>Chicken Katsu<small class="smallText price">14.00</small></li>
+                </ul>
+              </ul>
+              <h2 class="textMenuHeader">Kid's Meal<small class="smallText price">5.99</small></h2>
+              <p class="note">(Under 7 years) (Only Dinning)</p>
+              <ul>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D53</span>Rock Seaweed Rice</li>
+                  <li><span class="key smallText">D54</span>Chicken Teriyaki and Rice</li>
+                  <li><span class="key smallText">D55</span>Chicken Katsu and Rice</li>
+                </ul>
+              </ul>
+              <h2 class="textMenuHeader">SooRah Sushi Bar</h2>
+              <p class="note">Served with miso soup and salad.</p>
+              <ul>
+                <ul class="textMenuList">
+                  <li><span class="key smallText">D56</span>Paul's (Chefs choice)<small class="smallText price">25.00</small><div class="description">5 pieces of sushi and 7 pieces sashimi.</div></li>
+                  <li><span class="key smallText">D57</span>Sushi Deluxe<small class="smallText price">22.00</small><div class="description">9 pieces of assorted sushi and california roll.</div></li>
+                  <li><span class="key smallText">D59</span>Sashimi Deluxe<small class="smallText price">29.00</small><div class="description">12 pieces of assorted sashimi and rainbow roll.</div></li>
+                  <li><span class="key smallText">D60-A</span>SooRah Party Love - Combo<small class="smallText price">80.00</small><div class="description">12 pieces of sushi, 16 pieces of sashimi, rainbow roll.</div></li>
+                  <li><span class="key smallText">D60-B</span>SooRah Party Love - Combo<small class="smallText price">150.00</small><div class="description">20 pieces of sushi, 24 pieces of sashimi, california roll, spicy tuna roll, crab mania roll, and rainbow roll.</div></li>
+                  <li><span class="key smallText">D60-C</span>SooRah Party Love - Family Love Boat (Chef's Choice)<small class="smallText price">200.00</small><div class="description">(Sushi bar and kitchen)</div></li>
+                </ul>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<footer>
+  <div class="footerMain">
+    <div class="logoContainer">
+      <img src="https://image.ibb.co/hRkxOF/SooRah.png" class="logo footerLogo" alt="SooRah" border="0">
+    </div>
+    <div class="columns">
+      <div class="column">
+        <h2 class="secondaryHeading lightText">Explore the menu</h2>
+        <ul class="linkList" role="menu" aria-label="explore the menu">
+           <li role="menuitem">
+            <a href="lunch-menu.html" class="textLink">Lunch Menu</a>
+          </li>
+          <li role="menuitem">
+            <a href="dinner-menu.html" class="textLink">Dinner Menu</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2 class="secondaryHeading lightText">Useful links</h2>
+        <ul class="linkList" role="menu" aria-label="useful links">
+          <li role="menuitem">
+            <a href="gallery.html" class="textLink">Gallery</a>
+          </li>
+          <li role="menuitem">
+            <a href="reviews.html" class="textLink">Reviews</a>
+          </li>
+          <li role="menuitem">
+            <a href="#" class="textLink">More Information</a>
+          </li>
+          <li role="menuitem">
+            <a href="#" class="textLink">Full Sitemap</a></li>
+        </ul>
+      </div>
+      
+      <div class="column">
+        <h2 class="secondaryHeading lightText">Address</h2>
+        <address class="restaurantAddress">
+          38 N Central Ave Ste 110<br>
+          Medford, OR<br>
+          9501
+        </address>
+      </div>
+    </div>
+    <div class="social">
+      <a class="socialIcon" tabindex="0" aria-label="Go to restaurant yelp page"><i class="fa fa-yelp"></i></a>
+      <a class="socialIcon" tabindex="0" aria-label="Go to restaurant facebook page."><i class="fa fa-facebook"></i></a>
+    </div>
+  </div>
+  <div class="info">
+    <div class="row infoRow">
+    <small class="copyright">&copy; Copyright 2017, SooRah Korean Cuisine</small>
+    <a aria-label="Phone number of restaurant" href="tel:5418164141" class="textLinkSmall">541 - 816 - 4141  <i class="fa fa-phone" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="js/menu.js" type="text/javascript"></script>
+<script src="https://use.fontawesome.com/d9eaf45f03.js"></script>
+<script>
+  initMenu("dinner");
+  let head = document.querySelector(".contentHead");
+  head.style.backgroundImage = "linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)), url('./images/restaurant2.jpg')";
+</script>
+<script src="js/index.js"></script>
+  
+</body>
+</html>
