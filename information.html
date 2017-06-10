@@ -8,6 +8,8 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
@@ -17,14 +19,14 @@
         <a href="index.html"><small class="name">Soo Rah Korean Cuisine</small></a>
         
         <div class="social">
-          <a class="socialIcon" tabindex="0" aria-label="Go to restaurant yelp page"><i class="fa fa-yelp icon"></i></a>
-          <a class="socialIcon" tabindex="0" aria-label="Go to restaurant facebook page."><i class="fa fa-facebook icon"></i></a>
+          <a class="socialIcon" tabindex="0" aria-label="Go to restaurant yelp page" href="https://www.yelp.com/biz/soorah-korean-cuisine-medford"><i class="fa fa-yelp icon"></i></a>
+          <a class="socialIcon" tabindex="0" aria-label="Go to restaurant facebook page." href="https://www.facebook.com/SOO-RAH-Korean-Cuisine-1531389573799084/"><i class="fa fa-facebook icon"></i></a>
         </div>
       </div>
     </div>
     
     <div class="mainHeader">
-      <a href="index.html"><img src="https://image.ibb.co/hRkxOF/SooRah.png" class="logo" alt="SooRah" border="0"></a>
+      <a href="index.html"><img src="./images/logo.png" class="logo" alt="SooRah" border="0"></a>
       
       <nav class="mainNavigation" id="navigation">
         <ul class="mainNavigationList" id="navigationList" role="menu">
@@ -39,6 +41,9 @@
           </li>
           <li role="menuitem">
             <a href="reviews.html" class="mainLink">Customer Reviews</a>
+          </li>
+          <li role="menuitem">
+            <a href="information.html" class="mainLink">More Information</a>
           </li>
         </ul>
       </nav>
@@ -59,7 +64,7 @@
       <div class="infoHeader">
         Hours
       </div>
-      <table>
+      <table class="hoursTable">
         <thead>
           <tr>
             <th></th>
@@ -100,38 +105,42 @@
       <div class="infoHeader">
         More Information
       </div>
-      <div class="infoItem">Takes Reservations: <strong>Yes</strong></div>
-      <div class="infoItem">Delivery: <strong>No</strong></div>
-      <div class="infoItem">Take-out <strong>Yes</strong></div>
-      <div class="infoItem">Accepts Credit Cards <strong>Yes</strong></div>
-      <div class="infoItem">Accepts Apple Pay <strong>No</strong></div>
-      <div class="infoItem">Good For <strong>Lunch, Dinner</strong></div>
-      <div class="infoItem">Parking <strong>Garage, Street</strong></div>
-      <div class="infoItem">Bike Parking <strong>Yes</strong></div>
-      <div class="infoItem">Wheelchair Accessible <strong>Yes</strong></div>
-      <div class="infoItem">Good for Kids <strong>Yes</strong></div>
-      <div class="infoItem">Good for Groups <strong>Yes</strong></div>
-      <div class="infoItem">Attire <strong>Casual</strong></div>
-      <div class="infoItem">Ambience <strong>Casual</strong></div>
-      <div class="infoItem">Noise Level <strong>Quiet</strong></div>
-      <div class="infoItem">Alcohol <strong>Full Bar</strong></div>
-      <div class="infoItem">Outdoor Seating <strong>No</strong></div>
-      <div class="infoItem">Wi-Fi <strong>Free</strong></div>
-      <div class="infoItem">Has TV <strong>Yes</strong></div>
-      <div class="infoItem">Dogs Allowed <strong>No</strong></div>
-      <div class="infoItem">Waiter Service <strong>Yes</strong></div>
-      <div class="infoItem">Caters <strong>Yes</strong></div>
-      <div class="infoHeader">
-        Make a reservation or order Take-out.
+      <div class="moreInformation">
+        <div class="infoItem">Takes Reservations: <strong>Yes</strong></div>
+        <div class="infoItem">Delivery: <strong>No</strong></div>
+        <div class="infoItem">Take-out <strong>Yes</strong></div>
+        <div class="infoItem">Accepts Credit Cards <strong>Yes</strong></div>
+        <div class="infoItem">Accepts Apple Pay <strong>No</strong></div>
+        <div class="infoItem">Good For <strong>Lunch, Dinner</strong></div>
+        <div class="infoItem">Parking <strong>Garage, Street</strong></div>
+        <div class="infoItem">Bike Parking <strong>Yes</strong></div>
+        <div class="infoItem">Wheelchair Accessible <strong>Yes</strong></div>
+        <div class="infoItem">Good for Kids <strong>Yes</strong></div>
+        <div class="infoItem">Good for Groups <strong>Yes</strong></div>
+        <div class="infoItem">Attire <strong>Casual</strong></div>
+        <div class="infoItem">Ambience <strong>Casual</strong></div>
+        <div class="infoItem">Noise Level <strong>Quiet</strong></div>
+        <div class="infoItem">Alcohol <strong>Full Bar</strong></div>
+        <div class="infoItem">Outdoor Seating <strong>No</strong></div>
+        <div class="infoItem">Wi-Fi <strong>Free</strong></div>
+        <div class="infoItem">Has TV <strong>Yes</strong></div>
+        <div class="infoItem">Dogs Allowed <strong>No</strong></div>
+        <div class="infoItem">Waiter Service <strong>Yes</strong></div>
+        <div class="infoItem">Caters <strong>Yes</strong></div>
       </div>
-      <div>Number here</div>
+      <div class="infoHeader">
+        Make a reservation or order take-out
+      </div>
+      <div>Call here: <a aria-label="Phone number of restaurant" href="tel:5418164141" class="textLinkSmall">541 - 816 - 4141</a></div>
+      <img src="./images/spicyPork.jpg" class="infoImage" alt="restaurant outside"/>
     </div>
+    
   </div>
   
 <footer>
   <div class="footerMain">
     <div class="logoContainer">
-      <img src="https://image.ibb.co/hRkxOF/SooRah.png" class="logo footerLogo" alt="SooRah" border="0">
+      <img src="./images/logo.png" class="logo footerLogo" alt="SooRah" border="0">
     </div>
     <div class="columns">
       <div class="column">
@@ -158,6 +167,9 @@
             <a href="information.html" class="textLink">More Information</a>
           </li>
           <li role="menuitem">
+            <a href="jobs.html" class="textLink">Jobs</a>
+          </li>
+          <li role="menuitem">
             <a href="sitemap.html" class="textLink">Full Sitemap</a>
           </li>
         </ul>
@@ -173,8 +185,8 @@
       </div>
     </div>
     <div class="social">
-      <a class="socialIcon" tabindex="0" aria-label="Go to restaurant yelp page"><i class="fa fa-yelp"></i></a>
-      <a class="socialIcon" tabindex="0" aria-label="Go to restaurant facebook page."><i class="fa fa-facebook"></i></a>
+      <a class="socialIcon" tabindex="0" aria-label="Go to restaurant yelp page" href="https://www.yelp.com/biz/soorah-korean-cuisine-medford"><i class="fa fa-yelp icon"></i></a>
+      <a class="socialIcon" tabindex="0" aria-label="Go to restaurant facebook page." href="https://www.facebook.com/SOO-RAH-Korean-Cuisine-1531389573799084/"><i class="fa fa-facebook icon"></i></a>
     </div>
   </div>
   <div class="info">
@@ -187,7 +199,7 @@
 <script src="https://use.fontawesome.com/d9eaf45f03.js"></script>
 <script>
   let head = document.querySelector(".contentHead");
-  head.style.backgroundImage = "linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)), url('./images/dumplings.jpg')";
+  head.style.backgroundImage = "linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)), url('./images/restaurantOutside.jpg')";
 </script>
 <script src="js/navigation.js"></script>
   

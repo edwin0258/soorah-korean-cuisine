@@ -1,0 +1,29 @@
+.jobs {
+  background: $whiteSmoke;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.job {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px;
+  max-width: 400px;
+}
+
+.jobHeader {
+  font-size: 20px;
+  margin: 0;
+  @extend .headerFont;
+}
+
+.jobParagraph {
+  line-height: 30px;
+}
+
+.textLinkSmall {
+  color: $richBlack;
+  font-size: 15px;
+}

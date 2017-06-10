@@ -13,17 +13,17 @@ html {
     padding-top: 4px; }
   .pageHeader .icon {
     font-size: 12px; }
-  @media (max-width: 700px) {
+  @media (max-width: 870px) {
     .pageHeader .logo {
       height: 50px;
       width: auto; } }
-  @media (max-width: 700px) {
+  @media (max-width: 870px) {
     .pageHeader {
       position: fixed;
       width: 100%;
       height: 100px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 870px) {
   .mainNavigation {
     background: #070606;
     height: 100%;
@@ -40,7 +40,7 @@ html {
 
 .mainNavigationList {
   display: flex; }
-  @media (max-width: 700px) {
+  @media (max-width: 870px) {
     .mainNavigationList {
       height: calc(100% - 100px);
       justify-content: flex-start;
@@ -48,7 +48,7 @@ html {
 
 .mobileMenuButton {
   display: none; }
-  @media (max-width: 700px) {
+  @media (max-width: 870px) {
     .mobileMenuButton {
       border: 1px solid #070606;
       cursor: pointer;
@@ -76,7 +76,7 @@ html {
 .mainLink {
   color: #151212;
   margin-left: 40px; }
-  @media (max-width: 700px) {
+  @media (max-width: 870px) {
     .mainLink {
       box-sizing: border-box;
       background: rgba(255, 255, 255, 0.1);
@@ -99,7 +99,7 @@ html {
   width: 100%;
   max-width: 70em;
   margin: 0 auto; }
-  @media (max-width: 700px) {
+  @media (max-width: 870px) {
     .content {
       top: 100px; } }
 
@@ -126,9 +126,12 @@ html {
   font-family: "oswald", sans-serif;
   letter-spacing: 2px;
   text-shadow: 2px 2px black, -2px -2px black, 2px 0px black; }
+  @media (max-width: 800px) {
+    .contentHeader {
+      font-size: 60px; } }
 
 .headerFont, .secondaryHeading, .header,
-.textMenuHeader, .textMenuSubHeader {
+.textMenuHeader, .textMenuSubHeader, .jobHeader {
   font-size: 18px;
   font-family: "oswald", sans-serif;
   line-height: 40px;
@@ -137,7 +140,7 @@ html {
 
 .bodyFont, .mainLink, .row, .infoRow, .textLink,
 .restaurantAddress, .menuPageCounter, .textMenuList,
-.textMenuTable, .note {
+.textMenuTable, .note, .moreInformation, .sitemapList {
   font-family: "pt sans", sans-serif;
   letter-spacing: .5px;
   line-height: 20px; }
@@ -147,7 +150,7 @@ footer {
   height: auto;
   padding-top: 10px;
   width: 100%; }
-  @media (max-width: 700px) {
+  @media (max-width: 870px) {
     footer {
       margin-top: 100px; } }
   footer .social {
@@ -700,28 +703,74 @@ footer {
   box-sizing: border-box;
   width: 100%;
   margin: 20px;
-  background: #F9F5F2; }
+  background: #F9F5F2;
+  position: relative; }
 
 .infoHeader {
   font-size: 30px;
   margin: 20px 0;
-  text-decoration: double underline; }
+  text-decoration: underline; }
 
-table tr {
+.hoursTable tr {
   height: 20px; }
 
-table th {
+.hoursTable th {
   font-family: "oswald";
   font-size: 20px;
   font-weight: 500;
   float: right;
   padding: 0; }
 
-table td {
+.hoursTable td {
   font-family: "pt sans";
   font-size: 14px;
   line-height: 35px;
   padding: 0;
   padding-left: 15px; }
+
+.moreInformation strong {
+  font-weight: bold; }
+.moreInformation div {
+  height: 35px; }
+
+.infoImage {
+  float: right;
+  position: absolute;
+  width: 50%;
+  top: 50px;
+  right: 40px; }
+  @media (max-width: 800px) {
+    .infoImage {
+      display: none; } }
+
+.sitemapList {
+  margin-left: 20px; }
+
+.sitemap {
+  margin: 20px; }
+
+.jobs {
+  background: #F9F5F2;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.job {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px;
+  max-width: 400px; }
+
+.jobHeader {
+  font-size: 20px;
+  margin: 0; }
+
+.jobParagraph {
+  line-height: 30px; }
+
+.textLinkSmall {
+  color: #070606;
+  font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

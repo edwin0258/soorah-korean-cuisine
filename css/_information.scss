@@ -6,25 +6,26 @@
   width: 100%;
   margin: 20px;
   background: $whiteSmoke;
+  position: relative;
 }
 
 .infoHeader {
   font-size: 30px;
   margin: 20px 0;
-  text-decoration: double underline;
+  text-decoration: underline;
   //color: red;
 }
-table tr {
+.hoursTable tr {
   height: 20px;
 }
-table th {
+.hoursTable th {
   font-family: "oswald";
   font-size: 20px;
   font-weight: 500;
   float: right;
   padding:0;
 }
-table td {
+.hoursTable td {
   font-family: "pt sans";
   font-size: 14px;
   line-height: 35px;
@@ -32,6 +33,24 @@ table td {
   padding-left: 15px;
 }
 
-.header {
-  
+
+.moreInformation {
+  @extend .bodyFont;
+  strong {
+    font-weight: bold;
+  }
+  div {
+    height: 35px;
+  }
+}
+
+.infoImage {
+  float: right;
+  position: absolute;
+  width: 50%;
+  top: 50px;
+  right: 40px;
+  @media(max-width: 800px) {
+    display: none;
+  }
 }

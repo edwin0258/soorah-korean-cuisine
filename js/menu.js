@@ -8,6 +8,9 @@ let textMenuPages = document.querySelectorAll(".textMenuPage");
 let lunchMenuToggle = document.getElementById("lunchMenuToggle");
 let textMenu = document.getElementById("textMenu");
 let pageNotes = document.querySelectorAll(".pageNote");
+let idQuery = window.location.search.substring(1);
+let pageId = idQuery.split("=")[1];
+
 
 menuNext.addEventListener("click", nextMenu);
 menuPrev.addEventListener("click", prevMenu);
@@ -133,3 +136,13 @@ function toggleMenu() {
     lunchMenuToggle.className = "menuTypeBtn";
   }
 }
+
+function menuToQuery(i) {
+  menuTo(i);
+  menuImage.src = `images/dinnerMenu${i}.jpg`;
+}
+
+
+if(pageId) {
+  menuToQuery(pageId);
+};

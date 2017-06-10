@@ -2,7 +2,7 @@ $whiteSmoke: #F9F5F2;
 $beige: #FAF3DD;
 $paleCarmine: #cf1d35;
 $richBlack: #070606;
-$mobileView: 700px;
+$mobileView: 870px;
 
 html {
   background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
@@ -163,6 +163,9 @@ html {
   font-family: "oswald", sans-serif;
   letter-spacing: 2px;
   text-shadow: 2px 2px black, -2px -2px black, 2px 0px black;
+  @media(max-width: 800px) {
+    font-size: 60px;
+  }
 }
 
 
@@ -332,3 +335,5 @@ footer {
 @import "_gallery.scss";
 @import "_reviews.scss";
 @import "_information.scss";
+@import "_sitemap.scss";
+@import "_jobs.scss";
