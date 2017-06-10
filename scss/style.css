@@ -1,0 +1,218 @@
+html {
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); }
+
+header {
+  background: #F9F5F2;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  z-index: 99; }
+  header .info {
+    background: #221e1e;
+    font-size: 12px; }
+  header .social {
+    align-items: center;
+    padding-top: 4px; }
+  header .icon {
+    font-size: 12px; }
+  @media (max-width: 700px) {
+    header .logo {
+      height: 50px;
+      width: auto; } }
+  @media (max-width: 700px) {
+    header {
+      position: fixed;
+      width: 100%; } }
+
+@media (max-width: 700px) {
+  .mainNavigation {
+    background: #070606;
+    height: 100%;
+    left: 0;
+    top: 100px;
+    position: fixed;
+    transform: translate3d(100%, 0px, 0px);
+    transition: transform .5s;
+    width: 100%; } }
+
+.expandNavigation {
+  transition: transform .5s;
+  transform: translate3d(0px, 0px, 0px); }
+
+.mainNavigationList {
+  display: flex; }
+  @media (max-width: 700px) {
+    .mainNavigationList {
+      height: calc(100% - 100px);
+      justify-content: flex-start;
+      flex-flow: column wrap; } }
+
+.mobileMenuButton {
+  display: none; }
+  @media (max-width: 700px) {
+    .mobileMenuButton {
+      border: 1px solid #070606;
+      cursor: pointer;
+      display: block;
+      font-size: 20px; } }
+  .mobileMenuButton:after {
+    content: "Menu"; }
+
+.closeButton:after {
+  content: "Close"; }
+
+.mainHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 60em;
+  position: relative;
+  padding: 10px 0px;
+  z-index: 100; }
+  @media (max-width: 60em) {
+    .mainHeader {
+      padding: 10px 20px; } }
+
+.mainLink {
+  color: #151212;
+  margin-left: 40px; }
+  @media (max-width: 700px) {
+    .mainLink {
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.1);
+      color: #f1e8e1;
+      display: block;
+      margin: 5px 0px 0px 0px;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      width: 100%; }
+      .mainLink:hover {
+        background: rgba(255, 255, 255, 0.2); } }
+
+.main {
+  height: 1000px; }
+
+.headerFont, .secondaryHeading {
+  font-size: 18px;
+  font-family: "oswald", sans-serif;
+  line-height: 40px;
+  letter-spacing: .5px;
+  text-transform: capitalize; }
+
+.bodyFont, .mainLink, .row, .infoRow, .textLink,
+.restaurantAddress {
+  font-family: "pt sans", sans-serif;
+  letter-spacing: .5px;
+  line-height: 20px; }
+
+footer {
+  background: #151212;
+  height: auto;
+  padding-top: 10px;
+  width: 100%; }
+  footer .social {
+    margin-bottom: 10px;
+    width: 100%; }
+
+.footerMain {
+  text-align: center; }
+
+.logo,
+.footerLogo {
+  height: 100px;
+  width: 121px;
+  background: #F9F5F2; }
+
+.footerLogo {
+  filter: sepia(100%);
+  background: transparent;
+  opacity: .4;
+  margin: 20px auto; }
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 10px auto;
+  max-width: 80em; }
+  .columns .column {
+    align-items: center;
+    min-width: 200px;
+    margin: 10px 0px; }
+
+.secondaryHeading {
+  text-align: center; }
+
+.social {
+  display: flex;
+  height: 40px;
+  justify-content: center; }
+  .social .socialIcon {
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    height: 25px;
+    margin: 5px; }
+
+.info {
+  background: #070606;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 0px 20px; }
+
+.row {
+  max-width: 80em;
+  margin: 0 auto; }
+  @media (max-width: 400px) {
+    .row {
+      justify-content: flex-end; } }
+
+.infoRow {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between; }
+  @media (max-width: 400px) {
+    .infoRow {
+      flex-flow: column;
+      justify-content: center; } }
+
+.headerInfo {
+  flex-flow: row;
+  justify-content: space-between; }
+
+.linkList,
+.info,
+.restaurantAddress {
+  font-size: 13px; }
+
+.textLink,
+.restaurantAddress {
+  color: #beb4b4; }
+
+.linkList,
+.restaurantAddress {
+  text-align: center; }
+
+.textLinkSmall {
+  color: #F9F5F2;
+  font-size: 12px; }
+  .textLinkSmall:hover {
+    color: #RGB 250, 243, 221; }
+
+.lightText, .social .socialIcon {
+  color: #f1e8e1; }
+
+.darkText {
+  color: #151212; }
+
+.copyright,
+.name {
+  color: #F9F5F2;
+  font-size: 10px; }
+  @media (max-width: 400px) {
+    .copyright,
+    .name {
+      line-height: 3px; } }
+
+/*# sourceMappingURL=style.css.map */

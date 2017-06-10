@@ -1,20 +1,4 @@
-var menuToggle = document.getElementById("menuToggle");
-var navigation = document.getElementById("navigation");
-var navigationList = document.getElementById("navigationList");
-var toggled = false;
-var textColorChanged = false;
 
-menuToggle.addEventListener("click", toggleMobileMenu);
-function toggleMobileMenu() {
-  toggled = !toggled;
-  if(toggled) {
-    navigation.className += " expandNavigation";
-    menuToggle.className += " closeButton";
-  } else {
-    navigation.className = "mainNavigation";
-    menuToggle.className = "mobileMenuButton";
-  }
-}
 
 
 let slideshowImages = ["bbq.jpg","spicyPork.jpg","dumplings.jpg","spicySeafoodBibimbap.jpg","kalbiBeef.jpg","veggieTempura.jpg"];

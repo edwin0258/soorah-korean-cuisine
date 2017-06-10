@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Devin Miller"/>
-  <title>Gallery</title>
+  <title>Sitemap</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|PT+Sans|PT+Serif" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -52,20 +52,36 @@
   <div class="content">
     <div class="headContainer">
       <div class="contentHead">
-        <h1 class="contentHeader">Gallery</h1>
+        <h1 class="contentHeader">Sitemap</h1>
       </div>
     </div>
-    <div class="galleryContent">
-    </div>
-    <div class="gallerySlideshow">
-      <button class="closeSlideshow" id="gallerySlideshowClose">X</button>
-      <div class="galleryNav" id="menuNavigation">
-          <button class="galleryNavBtn" id="galleryPrev"><
-          </button>
-          <button class="galleryNavBtn" id="galleryNext">>
-          </button>
-      </div>
-    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lunch-menu">Lunch Menu</a></li>
+      <ul>
+        <li>Alcoholic Beverages</li>
+        <li>Beverages</li>
+        <li>Hot Appetizers</li>
+        <li>Cold Appetizers</li>
+        <li>SooRah Kitchen Specials</li>
+        <li>SooRah Sushi Bar Specials</li>
+      </ul>
+      <li>Dinner Menu</li>
+      <ul>
+        <li>Alcoholic Beverages</li>
+        <li>Beverages</li>
+        <li>Hot Appetizers</li>
+        <li>Cold Appetizers</li>
+        <li>Korean B.B.Q. Dishes</li>
+        <li>Korean Stew Dishes</li>
+        <li>Korean Curry Rice, Noodles</li>
+        <li>Katsu, Kids Meal, Sushi</li>
+      </ul>
+      <li>Gallery</li>
+      <li>Reviews</li>
+      <li>More Information</li>
+      <li>Help Wanted</li>
+    </ul>
   </div>
   
 <footer>
@@ -125,12 +141,11 @@
   </div>
 </footer>
 <script src="https://use.fontawesome.com/d9eaf45f03.js"></script>
-<script src="js/gallery.js"></script>
 <script>
   let head = document.querySelector(".contentHead");
   head.style.backgroundImage = "linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)), url('./images/dumplings.jpg')";
 </script>
-<script src="js/index.js"></script>
+<script src="js/navigation.js"></script>
   
 </body>
 </html>
