@@ -13,17 +13,17 @@ html {
     padding-top: 4px; }
   .pageHeader .icon {
     font-size: 12px; }
-  @media (max-width: 870px) {
+  @media (max-width: 950px) {
     .pageHeader .logo {
       height: 50px;
       width: auto; } }
-  @media (max-width: 870px) {
+  @media (max-width: 950px) {
     .pageHeader {
       position: fixed;
       width: 100%;
       height: 100px; } }
 
-@media (max-width: 870px) {
+@media (max-width: 950px) {
   .mainNavigation {
     background: #070606;
     height: 100%;
@@ -40,7 +40,7 @@ html {
 
 .mainNavigationList {
   display: flex; }
-  @media (max-width: 870px) {
+  @media (max-width: 950px) {
     .mainNavigationList {
       height: calc(100% - 100px);
       justify-content: flex-start;
@@ -48,7 +48,7 @@ html {
 
 .mobileMenuButton {
   display: none; }
-  @media (max-width: 870px) {
+  @media (max-width: 950px) {
     .mobileMenuButton {
       border: 1px solid #070606;
       cursor: pointer;
@@ -75,8 +75,9 @@ html {
 
 .mainLink {
   color: #151212;
-  margin-left: 40px; }
-  @media (max-width: 870px) {
+  margin-left: 40px;
+  font-size: 18px; }
+  @media (max-width: 950px) {
     .mainLink {
       box-sizing: border-box;
       background: rgba(255, 255, 255, 0.1);
@@ -99,7 +100,7 @@ html {
   width: 100%;
   max-width: 70em;
   margin: 0 auto; }
-  @media (max-width: 870px) {
+  @media (max-width: 950px) {
     .content {
       top: 100px; } }
 
@@ -139,8 +140,8 @@ html {
   text-transform: capitalize; }
 
 .bodyFont, .mainLink, .row, .infoRow, .textLink,
-.restaurantAddress, .menuPageCounter, .textMenuList,
-.textMenuTable, .note, .moreInformation, .sitemapList {
+.restaurantAddress, .textMenuList,
+.textMenuTable, .note, .imageDescription, .moreInformation, .sitemapList {
   font-family: "pt sans", sans-serif;
   letter-spacing: .5px;
   line-height: 20px; }
@@ -150,7 +151,7 @@ footer {
   height: auto;
   padding-top: 10px;
   width: 100%; }
-  @media (max-width: 870px) {
+  @media (max-width: 950px) {
     footer {
       margin-top: 100px; } }
   footer .social {
@@ -226,7 +227,7 @@ footer {
 
 .linkList,
 .restaurantAddress {
-  font-size: 13px; }
+  font-size: 16px; }
 
 .textLink,
 .restaurantAddress {
@@ -239,7 +240,7 @@ footer {
 .textLinkSmall,
 .smallText {
   color: #F9F5F2;
-  font-size: 12px; }
+  font-size: 13px; }
   .textLinkSmall:hover,
   .smallText:hover {
     color: #RGB 250, 243, 221; }
@@ -348,9 +349,10 @@ footer {
   font-size: 25px;
   margin: 20px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-  width: 600px;
+  width: 100%;
   padding: 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #d6cfcf; }
 
 .menuCards {
   display: flex;
@@ -411,30 +413,6 @@ footer {
     @media (max-width: 790px) {
       .menu img {
         display: none; } }
-
-.menuPageCounter {
-  width: 75px;
-  height: 30px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border-bottom: 1px solid #3e3535;
-  border-left: 1px solid #3e3535;
-  background: white;
-  display: flex;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 5px;
-  box-sizing: border-box; }
-  @media (max-width: 790px) {
-    .menuPageCounter {
-      display: none; } }
-  .menuPageCounter:before {
-    content: "page:";
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-right: 7px; }
 
 .smallText {
   color: black; }
@@ -542,7 +520,8 @@ footer {
   color: #F9F5F2; }
 
 .pageNote {
-  color: #F9F5F2; }
+  color: black;
+  display: none; }
   @media (max-width: 790px) {
     .pageNote {
       display: none; } }
@@ -578,6 +557,9 @@ footer {
 .menuTypeText:after {
   content: "View PDF Menu"; }
 
+.phoneLink {
+  color: #F9F5F2; }
+
 .galleryContent {
   display: flex;
   align-items: center;
@@ -590,14 +572,17 @@ footer {
 
 .galleryImageContainer {
   width: 300px;
-  height: 200px;
+  height: 300px;
   position: relative;
   overflow: hidden;
   margin: 10px;
-  transition: transform .3s; }
+  transition: transform .3s;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); }
   @media (max-width: 750px) {
     .galleryImageContainer {
-      width: 100%;
+      width: 400px;
       height: 400px; } }
   @media (min-width: 750px) {
     .galleryImageContainer:hover {

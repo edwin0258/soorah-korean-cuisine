@@ -1,13 +1,13 @@
 "use strict";
 
-var images = ["BeefBibimbab", "BeefTofuSoup", "BuckwheatNoodleSoup", "BuckwheatNoodleSoup2", "ChickenFriedRice", "ChickenKatsuBento", "Fish", "FishCake", "FriedRice", "Gallery2", "Kimchi", "MisoSoup", "PanFriedDumplings", "PanSearedDumplings", "PorkBulgogi", "Ramyun", "restaurant3", "restaurant4", "SeafoodPancake", "SeafoodTofuSoup", "ShortRibs", "SpicyChickenBulgogi", "StackedBentoWithGalbi", "SteamedDumplings"];
+var images = ["BeefBibimbab", "BeefTofuSoup", "BuckwheatNoodleSoup", "BuckwheatNoodleSoup2", "ChickenFriedRice", "ChickenKatsuBento", "sushiBar", "FishCake", "FriedRice", "dinner", "Kimchi", "MisoSoup", "PanFriedDumplings", "PanSearedDumplings", "PorkBulgogi", "Ramyun", "restaurant3", "restaurant4", "SeafoodPancake", "SeafoodTofuSoup", "ShortRibs", "SpicyChickenBulgogi", "StackedBentoWithGalbi", "SteamedDumplings"];
 var galleryContent = document.querySelector(".galleryContent");
 
 images.forEach(function (name, i) {
   var imageContainer = document.createElement("div");
   imageContainer.className = "galleryImageContainer";
 
-  var imagePath = "./images/gallery/" + name + ".jpg";
+  var imagePath = "./images/gallery/" + name + "-snapshot.jpg";
   var image = document.createElement("img");
   var description = name.split(/(?=[A-Z])/g).join(" ").toLowerCase();
   var imageDescription = document.createElement("div");
@@ -27,11 +27,19 @@ var galleryNext = document.getElementById("galleryNext");
 var galleryPrev = document.getElementById("galleryPrev");
 var galleryClose = document.getElementById("gallerySlideshowClose");
 var imageNum = void 0;
+
+function getImage(i) {
+  var image = document.querySelector(".galleryImage" + i).cloneNode(true);
+  var newPath = image.src.split("/");
+  newPath = "./images/gallery/" + newPath[newPath.length - 1].replace("-snapshot","");
+  image.setAttribute("src", newPath);
+  return image;
+}
+
 function enterSlideshow(i) {
   imageNum = i;
   gallerySlideshow.style.display = "flex";
-  var image = document.querySelector(".galleryImage" + imageNum).cloneNode(true);
-  gallerySlideshow.appendChild(image);
+  gallerySlideshow.appendChild(getImage(imageNum));
 }
 
 galleryNext.addEventListener("click", nextImage);
@@ -44,8 +52,7 @@ function nextImage() {
   if (!document.querySelector(".galleryImage" + imageNum)) {
     imageNum = 0;
   }
-  var image = document.querySelector(".galleryImage" + imageNum).cloneNode(true);
-  gallerySlideshow.appendChild(image);
+  gallerySlideshow.appendChild(getImage(imageNum));
 }
 
 function prevImage() {
@@ -55,8 +62,7 @@ function prevImage() {
     imageNum = images.length - 1;
     console.log(imageNum);
   }
-  var image = document.querySelector(".galleryImage" + imageNum).cloneNode(true);
-  gallerySlideshow.appendChild(image);
+  gallerySlideshow.appendChild(getImage(imageNum));
 }
 
 function closeGallery() {

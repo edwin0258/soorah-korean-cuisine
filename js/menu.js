@@ -4,7 +4,6 @@ var menuNext = document.getElementById("menuNext");
 var menuPrev = document.getElementById("menuPrev");
 var menuImage = document.getElementById("menuImage");
 var menu = document.getElementById("menu");
-var menuCounter = document.getElementById("counter");
 var menuListItems = document.querySelectorAll(".menuListItemName");
 var textMenuPages = document.querySelectorAll(".textMenuPage");
 var lunchMenuToggle = document.getElementById("lunchMenuToggle");
@@ -16,8 +15,6 @@ var itemPages;
 
 menuNext.addEventListener("click", nextMenu);
 menuPrev.addEventListener("click", prevMenu);
-//menu.addEventListener("click", nextMenu);
-// To be added.
 
 var menuCount = 0;
 var textMenuCount = 0;
@@ -74,18 +71,6 @@ function nextMenu() {
   }
   hidePages();
   textMenuPages[textMenuCount].style.display = "block";
-  count();
-}
-
-function count(x) {
-  if (menuCounter.firstChild) {
-    menuCounter.removeChild(menuCounter.firstChild);
-  }
-  if (x) {
-    menuCounter.appendChild(document.createTextNode(x));
-  } else {
-    menuCounter.appendChild(document.createTextNode(menuCount + 1));
-  }
 }
 
 if (menuType == "lunch") {
@@ -110,7 +95,6 @@ function menuTo(index) {
   }
   hidePages();
   textMenuPages[textMenuCount].style.display = "block";
-  count();
 }
 
 textMenuPages[0].style.display = "block";
@@ -128,18 +112,10 @@ function toggleMenu() {
   if (textMenuToggled) {
     textMenu.style.display = "block";
     menuImage.style.display = "none";
-    menuCounter.style.display = "none";
-    Array.prototype.forEach.call(pageNotes, function (note) {
-      return note.style.display = "none";
-    });
     lunchMenuToggle.className += " menuTypeText";
   } else {
     textMenu.style.display = "none";
     menuImage.style.display = "block";
-    menuCounter.style.display = "flex";
-    Array.prototype.forEach.call(pageNotes, function (note) {
-      return note.style.display = "inline";
-    });
     lunchMenuToggle.className = "menuTypeBtn";
   }
 }

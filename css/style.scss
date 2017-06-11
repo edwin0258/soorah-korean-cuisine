@@ -2,7 +2,7 @@ $whiteSmoke: #F9F5F2;
 $beige: #FAF3DD;
 $paleCarmine: #cf1d35;
 $richBlack: #070606;
-$mobileView: 870px;
+$mobileView: 950px;
 
 
 
@@ -100,14 +100,13 @@ html {
   @media(max-width: 70em) {
     padding: 10px 20px;
   }
-
-  
 }
 
 .mainLink {
   @extend .bodyFont;
   color: lighten($richBlack, 5%);
   margin-left: 40px;
+  font-size: 18px;
   @media(max-width: $mobileView) {
     box-sizing: border-box;
     background: rgba(255,255,255,.1);
@@ -169,10 +168,6 @@ html {
     font-size: 60px;
   }
 }
-
-
-
-
 
 .headerFont {
   font-size: 18px;
@@ -287,7 +282,7 @@ footer {
 
 .linkList,
 .restaurantAddress {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .textLink,
@@ -304,7 +299,7 @@ footer {
 .textLinkSmall,
 .smallText {
   color: $whiteSmoke;
-  font-size: 12px;
+  font-size: 13px;
   &:hover {
     color: #RGB(250, 243, 221);
   }

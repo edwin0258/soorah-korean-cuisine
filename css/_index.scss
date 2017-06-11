@@ -95,9 +95,10 @@
   font-size: 25px;
   margin: 20px;
   text-shadow: 1px 1px rgba(0,0,0,.3);
-  width: 600px;
+  width: 100%;
   padding: 20px;
   margin: 0 auto;
+  background: lighten($richBlack, 80%);
   @extend .headerFont;
 }
 

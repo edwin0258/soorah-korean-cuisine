@@ -54,32 +54,6 @@ $minimizedView: 1080px;
     }
 }
 
-.menuPageCounter {
-    width: 75px;
-    height: 30px;
-    position:absolute;
-    right: 0;
-    top: 0;
-    border-bottom:1px solid lighten($richBlack, 20%);
-    border-left:1px solid lighten($richBlack, 20%);
-    background: white;
-    display: flex;
-    @extend .bodyFont;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px;
-    box-sizing: border-box;
-    @media(max-width: 790px) {
-        display: none;
-    }
-    &:before {
-        content: "page:";
-        display: flex;
-        align-items: center;
-        height: 100%;
-        padding-right: 7px;
-    }
-}
 .smallText {
     color: black;
 }
@@ -204,7 +178,6 @@ $minimizedView: 1080px;
     font-style: italic;
     
     font-size: 14px;
-    //background: rgba(255,255,255,.2);
     width: auto;
 }
 
@@ -216,7 +189,8 @@ $minimizedView: 1080px;
 }
 
 .pageNote {
-    color: $whiteSmoke;
+    color: black;
+    display: none;
     @media(max-width: 790px) {
         display: none;
     }
@@ -263,4 +237,8 @@ $minimizedView: 1080px;
     &:after {
         content: "View PDF Menu"
     }
+}
+
+.phoneLink {
+    color: $whiteSmoke;
 }
