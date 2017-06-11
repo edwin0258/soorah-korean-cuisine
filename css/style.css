@@ -130,7 +130,7 @@ html {
     .contentHeader {
       font-size: 60px; } }
 
-.headerFont, .secondaryHeading, .header,
+.headerFont, .secondaryHeading, .mainMessage, .header,
 .textMenuHeader, .textMenuSubHeader, .jobHeader {
   font-size: 18px;
   font-family: "oswald", sans-serif;
@@ -263,7 +263,7 @@ footer {
   max-width: 70em; }
 
 .slideshow {
-  margin: 0px auto 40px auto;
+  margin: 0 auto 0 auto;
   width: 100%;
   max-width: 75em;
   height: 600px;
@@ -319,7 +319,50 @@ footer {
   border: none;
   background: #070606; }
 
-/*# sourceMappingURL=index.css.map */
+.mainIndexContent {
+  background: white;
+  width: 100%;
+  height: 600px;
+  display: flex; }
+
+.mainInformation {
+  flex: 1; }
+
+.sideInformation {
+  min-width: 300px;
+  padding: 10px;
+  box-sizing: border-box; }
+
+.hours {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center; }
+  .hours .infoHeader {
+    padding: 0;
+    margin: 0; }
+
+.mainMessage {
+  font-size: 25px;
+  margin: 20px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto; }
+
+.menuCards {
+  display: flex;
+  justify-content: center; }
+
+.menuCard {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border: 1px solid black; }
+
 .sideContent {
   height: 100%;
   min-width: 320px;
@@ -606,10 +649,14 @@ footer {
 
 .galleryNav {
   z-index: 500;
-  max-width: 650px; }
+  max-width: 650px;
+  top: 0;
+  position: absolute;
+  display: none; }
   @media (min-width: 650px) {
     .galleryNav {
-      position: absolute;
+      display: flex;
+      background: transparent;
       left: calc(50% - 325px); } }
 
 .closeSlideshow {
@@ -618,9 +665,14 @@ footer {
   height: 40px;
   background: #070606;
   color: #F9F5F2;
+  border: 1px solid #F9F5F2;
+  box-shadow: 4px 4px 10px black;
   cursor: pointer;
   top: 20px;
-  right: 20px; }
+  right: 20px;
+  z-index: 1000; }
+  .closeSlideshow:hover {
+    background: #221e1e; }
 
 .reviews {
   flex-flow: column;

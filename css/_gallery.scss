@@ -79,8 +79,12 @@
   @extend .menuNav;
   z-index: 500;
   max-width: 650px;
+  top: 0;
+  position: absolute;
+  display: none;
   @media(min-width: 650px) {
-    position: absolute;
+    display: flex;
+    background: transparent;
     left: calc(50% - 325px);
   }
 }
@@ -95,7 +99,13 @@
   height: 40px;
   background: $richBlack;
   color: $whiteSmoke;
+  border: 1px solid $whiteSmoke;
+  box-shadow: 4px 4px 10px black;
   cursor: pointer;
   top: 20px;
   right: 20px;
+  z-index: 1000;
+  &:hover {
+    background: lighten($richBlack, 10%);
+  }
 }

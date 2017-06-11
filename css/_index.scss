@@ -1,7 +1,7 @@
 
 
 .slideshow {
-  margin: 0px auto 40px auto;
+  margin: 0 auto 0 auto;
   width: 100%;
   max-width: 75em;
   height: 600px;
@@ -61,4 +61,55 @@
   background: $richBlack;
 }
 
-/*# sourceMappingURL=index.css.map */
+.mainIndexContent {
+  background: white;
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+.mainInformation {
+  flex: 1;
+}
+
+.sideInformation {
+  min-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.hours {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+  .infoHeader {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.mainMessage {
+  font-size: 25px;
+  margin: 20px;
+  text-shadow: 1px 1px rgba(0,0,0,.3);
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  @extend .headerFont;
+}
+
+.menuCards {
+  display: flex;
+  justify-content: center;
+}
+
+.menuCard {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border: 1px solid black;
+}
