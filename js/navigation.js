@@ -1,3 +1,5 @@
+"use strict";
+
 var menuToggle = document.getElementById("menuToggle");
 var navigation = document.getElementById("navigation");
 var toggled = false;
@@ -5,7 +7,7 @@ var toggled = false;
 menuToggle.addEventListener("click", toggleMobileMenu);
 function toggleMobileMenu() {
   toggled = !toggled;
-  if(toggled) {
+  if (toggled) {
     navigation.className += " expandNavigation";
     menuToggle.className += " closeButton";
   } else {
