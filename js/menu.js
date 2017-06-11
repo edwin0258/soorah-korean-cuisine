@@ -12,6 +12,7 @@ var textMenu = document.getElementById("textMenu");
 var pageNotes = document.querySelectorAll(".pageNote");
 var idQuery = window.location.search.substring(1);
 var pageId = idQuery.split("=")[1];
+var itemPages;
 
 menuNext.addEventListener("click", nextMenu);
 menuPrev.addEventListener("click", prevMenu);
