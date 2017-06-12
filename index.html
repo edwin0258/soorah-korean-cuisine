@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="author" content="Devin Miller"/>
   <title>Soo Rah Korean Cuisine</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans|PT+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|PT+Sans|PT+Serif" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -69,24 +69,59 @@
     <div class="points"></div>
   </div>
   <div class="mainIndexContent">
+    <div class="mainMessage">
+      <p lang="ko">수라에 오신것을 환영합니다 항상 행복한날 되세요.</p>
+      <p>Welcome to SooRah, we wish you happiness all of the time.</p>
+    </div>
     <div class="mainInformation">
-      <div class="mainMessage">
-        <p lang="ko">수라에 오신것을 환영합니다 항상 행복한날 되세요.</p>
-        <p>Welcome to SooRah, we wish you happiness all of the time.</p>
-      </div>
-      <h2>Explore the menu</h2>
+      <h2 class="homeHeader">Explore the menu</h2>
       <div class="menuCards">
-        <div class="menuCard">Lunch</div>
-        <div class="menuCard">Dinner</div>
+        <a href="lunch-menu.html">
+        <div class="menuCard">
+          <img class="menuCardImage" src="./images/gallery/ramyun-snapshot.jpg"/>
+          <b class="menuCardDescription">Lunch</b>
+        </div>
+        </a>
+        <a href="dinner-menu.html">
+        <div class="menuCard">
+          <img class="menuCardImage" src="./images/gallery/FriedRice-snapshot.jpg"/>
+          <b class="menuCardDescription">Dinner</b>
+        </div>
+        </a>
       </div>
-
-      <div>
-        <h2>Look at our gallery</h2>
+      
+      <div class="review">
+        <div class="reviewInfo">
+          <div class="reviewer">Jeannette H.</div>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <time class="date">4/6/2017</time>
+        </div>
+        <div class="reviewContent"><pre>I was very impressed with SooRah. The food was delicious, service was prompt and great. The portions and their prices were reasonable. As we came in with our friends we were greeted by Paul the owner, he was designing his sushi rolls. Towards the end of our meal, Paul came over and personally greeted us and we had great conversation. We will definitely come back and we are going to invite many of our friends</pre>
+        <a href="reviews.html" class="textLink darkText">More Reviews</a>
+        </div>
       </div>
+      
+      <h2 class="homeHeader">Browse our gallery</h2>
+      <a href="gallery.html" class="galleryCards">
+        <div class="galleryCard">
+          <img src="./images/gallery/BuckwheatNoodleSoup-snapshot.jpg"/>
+        </div>
+        <div class="galleryCard">
+          <img src="./images/gallery/Kimchi-snapshot.jpg"/>
+        </div>
+        
+          <b class="galleryCardDescription">Gallery</b>
+      </a>
     </div>
     <div class="sideInformation">
       <div class="hours">
-        <h2 class="infoHeader">Hours</h2>
+        <h2 class="homeHeaderSmall">Our Hours</h2>
         <table class="hoursTable">
           <tbody>
             <tr>
@@ -119,7 +154,23 @@
             </tr>
           </tbody>
         </table>
-        <a href="information.html" class="textLink darkText informationLink">More information</a>
+        <a href="information.html" class="btn">More information</a>
+        
+        <h2 class="homeHeaderSmall">Location</h2>
+        <div class="map">
+          <img src="./images/map.png"/>
+        </div>
+        <address class="restaurantAddress darkText">
+          38 N Central Ave Ste 110<br>
+          Medford, OR<br>
+          97501
+        </address>
+
+        <h2 class="homeHeaderSmall">Takeout/Reservation</h2>
+        <p class="bodyFont">Call us at: <a aria-label="Phone number of restaurant" href="tel:5418164141" class="darkText">541 - 816 - 4141</a></p>
+        <div class="card">
+          We are hiring! Check our <a href="jobs.html">jobs</a> page for more information.
+        </div>
       </div>
     </div>
   </div>
