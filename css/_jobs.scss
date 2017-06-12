@@ -24,9 +24,7 @@
   line-height: 30px;
   @extend .bodyFont;
   font-size: 18px;
-}
-
-.textLinkSmall {
-  color: $richBlack;
-  font-size: 15px;
+  a {
+    color: black;
+  }
 }

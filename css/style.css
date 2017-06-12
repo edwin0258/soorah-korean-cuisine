@@ -343,12 +343,21 @@ b {
   box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2); }
   .mainInformation .review {
     margin-left: 10px; }
+    @media (max-width: 1100px) {
+      .mainInformation .review {
+        margin: 0 auto; } }
+  @media (max-width: 1100px) {
+    .mainInformation {
+      width: 100%; } }
 
 .sideInformation {
   width: 330px;
   box-sizing: border-box;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   padding-top: 10px; }
+  @media (max-width: 1100px) {
+    .sideInformation {
+      min-width: 100%; } }
 
 .hours {
   margin: 0 auto;
@@ -365,15 +374,22 @@ b {
   margin: 20px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
   width: calc(100% - 40px);
-  height: 100px;
+  height: auto;
   display: flex;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
   padding: 20px;
   margin: 0 auto;
+  width: 100%;
   background: url("../images/checkered-pattern.png"), white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  .mainMessage p {
+    width: 100%;
+    text-align: center; }
+  @media (max-width: 1100px) {
+    .mainMessage {
+      font-size: 25px; } }
 
 .menuCards {
   display: flex;
@@ -392,27 +408,40 @@ b {
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); }
+  @media (max-width: 1100px) {
+    .menuCard,
+    .galleryCard {
+      justify-content: center; } }
+
+.menuCards {
+  width: 100%;
+  height: 300px;
+  flex-flow: row wrap;
+  display: flex;
+  margin: 10px;
+  height: auto; }
+  @media (max-width: 1100px) {
+    .menuCards {
+      justify-content: center;
+      margin: 0; } }
 
 .galleryCard {
   margin-left: 10px; }
-
-.galleryCards {
-  width: 600px;
-  height: 300px;
-  display: flex;
-  position: relative;
-  margin: 0 0 20px 10px; }
+  @media (max-width: 1100px) {
+    .galleryCard {
+      margin: 0 auto; } }
 
 .menuCardImage {
   position: absolute;
   width: 100%;
+  display: flex;
   left: 0; }
 
 .menuCardDescription,
 .galleryCardDescription {
   color: white;
   position: relative;
-  z-index: 99;
+  z-index: 98;
   text-decoration: underline;
   font-size: 50px; }
 
@@ -429,6 +458,9 @@ b {
 .homeHeader, .homeHeaderSmall {
   margin: 10px;
   font-size: 25px; }
+  @media (max-width: 1100px) {
+    .homeHeader, .homeHeaderSmall {
+      text-align: center; } }
 
 .homeHeaderSmall {
   font-size: 20px; }
@@ -675,7 +707,7 @@ b {
   @media (min-width: 750px) {
     .galleryImageContainer:hover {
       transform: scale(1.2);
-      z-index: 99;
+      z-index: 98;
       transition: transform .3s; }
     .galleryImageContainer:hover > .imageDescription {
       transform: translate3d(0, 0, 0); } }
@@ -898,9 +930,7 @@ b {
 .jobParagraph {
   line-height: 30px;
   font-size: 18px; }
-
-.textLinkSmall {
-  color: #070606;
-  font-size: 15px; }
+  .jobParagraph a {
+    color: black; }
 
 /*# sourceMappingURL=style.css.map */
