@@ -52,7 +52,6 @@ function prevMenu() {
 
   hidePages();
   textMenuPages[textMenuCount].style.display = "block";
-  count();
 }
 
 function nextMenu() {

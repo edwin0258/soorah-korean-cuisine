@@ -107,8 +107,8 @@
   border: 1px solid $whiteSmoke;
   box-shadow: 4px 4px 10px black;
   cursor: pointer;
-  top: 20px;
-  right: 20px;
+  left: calc(50% + 325px);
+  top: 40px;
   z-index: 1000;
   &:hover {
     background: lighten($richBlack, 10%);

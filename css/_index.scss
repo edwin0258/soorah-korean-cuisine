@@ -18,9 +18,7 @@ b {
 .slides {
   height: 100%;
   width: inherit;
-  $width: width;
   transition: .4s transform cubic-bezier(0.42, 0, 0.58, 1);
-  transform: translate3d($width, 0px, 0px);
   display: flex;
 }
 

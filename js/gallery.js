@@ -1,12 +1,10 @@
 "use strict";
 
-var images = ["BeefBibimbab", "BeefTofuSoup", "BuckwheatNoodleSoup", "BuckwheatNoodleSoup2", "ChickenFriedRice", "ChickenKatsuBento", "sushiBar", "FishCake", "FriedRice", "dinner", "Kimchi", "MisoSoup", "PanFriedDumplings", "PanSearedDumplings", "PorkBulgogi", "Ramyun", "restaurant3", "restaurant4", "SeafoodPancake", "SeafoodTofuSoup", "ShortRibs", "SpicyChickenBulgogi", "StackedBentoWithGalbi", "SteamedDumplings"];
+var images = ["BeefBibimbab", "BeefTofuSoup", "BuckwheatNoodleSoup", "BuckwheatNoodleSoup2", "ChickenFriedRice", "ChickenKatsuBento", "sushiBar", "FishCake", "FriedRice", "SeafoodPancakeAndSides", "Kimchi", "MisoSoup", "PanFriedDumplings", "PanSearedDumplings", "PorkBulgogi", "Ramyun", "RestaurantInside", "RestaurantArt", "SeafoodPancake", "SeafoodTofuSoup", "ShortRibs", "SpicyChickenBulgogi", "StackedBentoWithGalbi", "SteamedDumplings"];
 var galleryContent = document.querySelector(".galleryContent");
-
 images.forEach(function (name, i) {
   var imageContainer = document.createElement("div");
   imageContainer.className = "galleryImageContainer";
-
   var imagePath = "./images/gallery/" + name + "-snapshot.jpg";
   var image = document.createElement("img");
   var description = name.split(/(?=[A-Z])/g).join(" ").toLowerCase();
@@ -17,22 +15,37 @@ images.forEach(function (name, i) {
   image.setAttribute("src", imagePath);
   image.className = "galleryImage galleryImage" + i;
   galleryContent.appendChild(imageContainer.appendChild(image).parentNode.appendChild(imageDescription).parentNode);
-  imageContainer.addEventListener("click", function () {
-    enterSlideshow(i);
-  });
+  if(window.innerWidth > 800) {
+    imageContainer.addEventListener("click", function () {
+      enterSlideshow(i);
+    });
+  }
 });
 
+
 var gallerySlideshow = document.querySelector(".gallerySlideshow");
+var galleryNavigation = document.querySelector(".galleryNav");
 var galleryNext = document.getElementById("galleryNext");
 var galleryPrev = document.getElementById("galleryPrev");
 var galleryClose = document.getElementById("gallerySlideshowClose");
 var imageNum = void 0;
+var galleryClickClose = false;
+galleryNavigation.addEventListener("mouseenter", () => {galleryClickClose = false;});
+galleryNavigation.addEventListener("mouseleave", () => {galleryClickClose = true;});
+gallerySlideshow.addEventListener("click", clickClose);
+
+function clickClose() {
+  if(galleryClickClose) {
+    closeGallery();
+  }
+}
 
 function getImage(i) {
   var image = document.querySelector(".galleryImage" + i).cloneNode(true);
   var newPath = image.src.split("/");
   newPath = "./images/gallery/" + newPath[newPath.length - 1].replace("-snapshot","");
   image.setAttribute("src", newPath);
+  
   return image;
 }
 

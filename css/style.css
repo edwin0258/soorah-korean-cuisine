@@ -243,9 +243,6 @@ footer {
 .smallText {
   color: #F9F5F2;
   font-size: 13px; }
-  .textLinkSmall:hover,
-  .smallText:hover {
-    color: #RGB 250, 243, 221; }
 
 .lightText, .social .socialIcon {
   color: #f1e8e1; }
@@ -284,7 +281,6 @@ b {
   height: 100%;
   width: inherit;
   transition: 0.4s transform cubic-bezier(0.42, 0, 0.58, 1);
-  transform: translate3d(width, 0px, 0px);
   display: flex; }
 
 .slide {
@@ -568,7 +564,7 @@ b {
   font-size: 20px;
   background: none;
   text-align: left;
-  font-weight: light;
+  font-weight: 100;
   color: #070606;
   font-weight: 100;
   margin: 5px 0; }
@@ -597,12 +593,14 @@ b {
       text-align: center; } }
 .sideNav .textLink {
   margin: 20px 0px; }
-.sideNav .menuListItemName {
-  text-decoration: underline;
-  cursor: pointer; }
 .sideNav .smallText {
   opacity: .9;
   text-decoration: none; }
+
+.menuListItemName a {
+  color: #cac1c1;
+  text-decoration: underline;
+  cursor: pointer; }
 
 .downloadBtn,
 .menuTypeBtn {
@@ -639,12 +637,11 @@ b {
   font-size: 13px;
   color: #F9F5F2; }
 
-.pageNote {
-  color: black;
+.mobileScrollPlaceholder {
   display: none; }
   @media (max-width: 790px) {
-    .pageNote {
-      display: none; } }
+    .mobileScrollPlaceholder {
+      display: block; } }
 
 @media (max-width: 790px) {
   .menuNav, .galleryNav {
@@ -774,8 +771,8 @@ b {
   border: 1px solid #F9F5F2;
   box-shadow: 4px 4px 10px black;
   cursor: pointer;
-  top: 20px;
-  right: 20px;
+  left: calc(50% + 325px);
+  top: 40px;
   z-index: 1000; }
   .closeSlideshow:hover {
     background: #221e1e; }
