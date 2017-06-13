@@ -53,7 +53,7 @@ slideshowNext.addEventListener("click", nextSlide);
 
 function prevSlide() {
   slideCount -= 2;
-  if (slideCount < 1) {
+  if (slideCount < 0) {
     slideCount = slideshowImages.length - 1;
   }
   moveSlides();
